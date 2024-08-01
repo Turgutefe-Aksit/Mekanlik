@@ -7,7 +7,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const TabBar = () =>{
     return(
         <View style={styles.mainCont} >
-            <Icon name="rocket" size={30} color="#900" />
+            <Icon name='bars' size={30} color="black" />
+            <Icon name='user-circle' size={30} color="black" />
         </View>
        
         
@@ -16,7 +17,11 @@ const TabBar = () =>{
 
 const styles = StyleSheet.create({
     mainCont:{
-        padding:10
+        padding:10,
+        flexDirection: 'row',
+        justifyContent: 'space-between', 
+        alignItems: 'center',
+        
     }
     
 }) 
