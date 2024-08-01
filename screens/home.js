@@ -12,17 +12,19 @@ const Home = () =>{
         {name: 'yemek', km:5.3},
         {name: 'restorant', km:1.7},
         {name: 'tekel', km:2.4},
+        {name: 'tekel', km:2.4},
     ])
     return(
-        <View>
-        <TabBar></TabBar>
-        <FlatList 
-            data={postData}
-            renderItem={({item})=>(
-                <Post name={item.name} km={item.km}></Post>
-            )}
+        <View styles={styles.mainCont}>
+            <TabBar styles={styles.tabBar}></TabBar>
+            <FlatList 
+                contentContainerStyle={{ paddingBottom: 100 }} 
+                data={postData}
+                renderItem={({item})=>(
+                    <Post name={item.name} km={item.km}></Post>
+                )}
 
-        />
+            />
         </View>
         
     )
@@ -31,9 +33,17 @@ const Home = () =>{
 const styles = StyleSheet.create({
     mainCont:{
         width:'100%',
+        flex:1,
         
     },
-    
+    tabBar:{
+        
+        width:'100%'
+    },
+    feed:{
+        
+        width:'100%'
+    }
 }) 
 
 

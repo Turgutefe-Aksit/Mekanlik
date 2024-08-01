@@ -27,6 +27,7 @@ import {
 import InputBox from './components/InputBox';
 import Login from './screens/login';
 import Home from './screens/home';
+import TabBar from './screens/tabBar';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -36,9 +37,9 @@ type SectionProps = PropsWithChildren<{
 
 function App(): React.JSX.Element {
   return (
-    <View >
+    <SafeAreaView >
       <Home/>
-    </View>
+    </SafeAreaView>
   );
 }
 

@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     },
     content:{
         marginTop:20,
-        backgroundColor:'red'
     },
     star:{
         height:40,
